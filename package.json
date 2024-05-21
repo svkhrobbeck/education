@@ -10,6 +10,7 @@
     "prepare": "node .husky/install.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "axios": "^1.7.1",
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
