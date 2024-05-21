@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "node .husky/install.mjs"
+    "prepare": "node .husky/install.mjs",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
@@ -26,6 +27,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.5",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/nprogress": "^0.2.3",
