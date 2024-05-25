@@ -1,5 +1,5 @@
-import { IChildren } from "@/helpers/interfaces";
 import { DetailedHTMLProps, ParamHTMLAttributes } from "react";
+import { IChildren } from "@/helpers/interfaces";
 
 type ParagraphProps = DetailedHTMLProps<ParamHTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>;
 
