@@ -4,7 +4,8 @@
   margin-right: 5px;
   margin-top: 5px;
   border-radius: 5px;
-  line-height: 1;
+  line-height: 1.2;
+  margin: 0;
 
   &--size {
     &-s {
@@ -20,13 +21,13 @@
     &-red {
       background-color: var(--background-red);
       color: var(--content-white);
-      font-weight: bold;
+      font-weight: 500;
     }
 
     &-green {
       background-color: var(--background-green-light);
       color: var(--content-green);
-      font-weight: bold;
+      font-weight: 500;
     }
 
     &-primary {
