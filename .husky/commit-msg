@@ -1,1 +1,1 @@
-yarn commitlint
+yarn commitlint $1
