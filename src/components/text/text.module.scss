@@ -1,0 +1,19 @@
+.text {
+  margin: 0;
+  line-height: 1.6;
+
+  &--s {
+    @extend .text;
+    font-size: 14px;
+  }
+
+  &--m {
+    @extend .text;
+    font-size: 16px;
+  }
+
+  &--l {
+    @extend .text;
+    font-size: 18px;
+  }
+}
