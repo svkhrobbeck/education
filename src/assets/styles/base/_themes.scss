@@ -1,0 +1,97 @@
+@mixin theme-light {
+  // BACKGROUND COLORS
+  --background-white: rgb(245, 245, 204);
+  --background-black: #3b434e;
+  --background-blue: #2d4191;
+  --background-primary: #0a2d56;
+  --background-primary-hover: #08011a;
+  --background-admiral: #5748df;
+  --background-green: #1dc37e;
+  --background-green-light: #c8f8e4;
+  --background-red: #fc836d;
+  --background-red-light: #d18476;
+  --background-orange: #ffa012;
+  --background-yellow: #fed504;
+  --background-secondary: #5a6d80;
+  --background-tertiary: #9baab8;
+  --background-air: #f3f5fa;
+  --background-gray: #a4a4a4;
+  --background-gray-light: #aeaeae;
+  --background-gray-dark: #787d85;
+  --background-disabled: #e0e6ec;
+  --background-line: #dbdbe7;
+  --background-table: #f9f9f9;
+  --background-loading: rgba(255, 255, 255, 0.9);
+  --background-loading-full: rgba(255, 255, 255, 0.5);
+
+  // TEXT COLORS
+  --content-white: rgb(245, 245, 204);
+  --content-black: #3b434e;
+  --content-blue: #2d4191;
+  --content-primary: #0a2d56;
+  --content-primary-hover: #08011a;
+  --content-admiral: #5748df;
+  --content-red: #fc836d;
+  --content-red-light: #d18476;
+  --content-green: #1dc37e;
+  --content-green-light: #c8f8e4;
+  --content-orange: #ffa012;
+  --content-yellow: #fed504;
+  --content-secondary: #5a6d80;
+  --content-tertiary: #9baab8;
+  --content-gray: #a4a4a4;
+  --content-gray-light: #aeaeae;
+  --content-gray-dark: #787d85;
+
+  // BORDER COLORS
+  --border-white: rgb(245, 245, 204);
+  --border-blue: #2d4191;
+  --border-primary: #0a2d56;
+  --border-primary-hover: #08011a;
+  --border-admiral: #5748df;
+  --border-red: #fc836d;
+  --border-red-light: #d18476;
+  --border-green: #1dc37e;
+  --border-green-light: #c8f8e4;
+  --border-orange: #ffa012;
+  --border-yellow: #fed504;
+  --border-secondary: #5a6d80;
+  --border-tertiary: #9baab8;
+  --border-gray: #a4a4a4;
+  --border-gray-light: #aeaeae;
+  --border-gray-dark: #787d85;
+  --border-line: #dbdbe7;
+
+  // STATUS COLORS
+  --status-blue: #2d4191;
+  --status-primary: #0a2d56;
+  --status-primary-hover: #08011a;
+  --status-green: #1dc37e;
+  --status-green-light: #c8f8e4;
+  --status-red: #fc836d;
+  --status-red-light: #d18476;
+  --status-gray: #6d8297;
+  --status-orange: #ffa012;
+  --status-yellow: #fed504;
+
+  // SHADOW COLORS
+  --shadow-card: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --shadow-card-hover: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --shadow-box: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
+  --shadow-input-focus: 0 0 15px rgba(38, 120, 244, 0.35);
+  --shadow-dropdown: 0 8px 35px rgba(0, 0, 0, 0.15);
+  --shadow-panel-big: 0 8px 35px rgba(0, 0, 0, 0.15);
+  --surface-panel: #ffffff;
+  --shadow-panel-mini: 0 2px 15px rgba(0, 0, 0, 0.1);
+  --shadow-input: 0 2px 5px rgba(0, 0, 0, 0.08);
+
+  // BORDER RADIUS
+  --border-radius-4: 4px;
+  --border-radius-6: 6px;
+  --border-radius-8: 8px;
+  --border-radius-12: 12px;
+  --border-radius-24: 24px;
+
+  // FONT FAMILIES
+  --font-roboto: Roboto, Arial, sans-serif;
+}

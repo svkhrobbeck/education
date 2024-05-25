@@ -2,6 +2,8 @@ import Head from "next/head";
 import type { AppProps } from "next/app";
 import { Analytics } from "@vercel/analytics/react";
 
+import "@/assets/styles/main.scss";
+
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>

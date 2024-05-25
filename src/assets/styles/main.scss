@@ -1,0 +1,10 @@
+@import "normalize.css";
+@import "base/typography";
+@import "base/themes";
+@import "base/base";
+@import "base/general";
+@import "base/responsive";
+
+:root {
+  @include theme-light;
+}
