@@ -1,7 +1,7 @@
-import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
+import { ComponentProps } from "react";
 import { IChildren } from "@/helpers/interfaces";
 
-type BtnTagProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> & IChildren;
+type BtnTagProps = ComponentProps<"button"> & IChildren;
 
 export type ButtonProps = BtnTagProps & {
   appearance: "primary" | "ghost" | "failure" | "success";

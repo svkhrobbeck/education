@@ -1,5 +1,8 @@
+import { ComponentProps } from "react";
 import { IChildren } from "@/helpers/interfaces";
 
-export interface ContainerProps extends IChildren {
+type DivProps = ComponentProps<"div"> & IChildren;
+
+export interface ContainerProps extends DivProps {
   type?: "default" | "mini" | "fluid";
 }

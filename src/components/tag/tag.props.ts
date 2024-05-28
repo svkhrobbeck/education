@@ -1,7 +1,7 @@
-import { DetailedHTMLProps, HTMLAttributes } from "react";
+import { ComponentProps } from "react";
 import { IChildren } from "@/helpers/interfaces";
 
-type DivProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & IChildren;
+type DivProps = ComponentProps<"div"> & IChildren;
 
 export type TagProps = DivProps & {
   size?: "s" | "m";

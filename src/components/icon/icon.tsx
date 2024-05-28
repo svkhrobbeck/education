@@ -8,8 +8,8 @@ import * as List from "./list";
 
 import cls from "./icon.module.scss";
 
-const Icon: React.FC<IconProps> = ({ name, width, height, className, color, onClick }) => {
-  const Component = get(List, `${name}`);
+const Icon: React.FC<IconProps> = ({ name, width, height, className, color, ...props }) => {
+  const Component = get(List, name);
 
   const style = {
     ...(color ? { "--color": color } : {}),
@@ -24,7 +24,7 @@ const Icon: React.FC<IconProps> = ({ name, width, height, className, color, onCl
   }
 
   return (
-    <span {...{ className: cx(cls.wrapper, className), onClick, style }}>
+    <span {...{ className: cx(cls.wrapper, className), style, ...props }}>
       {React.createElement(Component)}
     </span>
   );
