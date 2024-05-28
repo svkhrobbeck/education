@@ -1,5 +1,6 @@
 export { default as Tag } from "./tag";
 export { default as Text } from "./text";
+export { default as Card } from "./card";
 export { default as Icon } from "./icon";
 export { default as Input } from "./input";
 export { default as Button } from "./button";
