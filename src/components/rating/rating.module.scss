@@ -1,0 +1,40 @@
+.rating {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.star {
+  transition: all 0.5s ease;
+
+  &:not(.starFilled) {
+    svg {
+      transition: all 0.5s ease;
+      fill: #e2e2e2;
+    }
+  }
+
+  &:hover svg {
+    fill: var(--background-primary);
+  }
+
+  &Filled svg {
+    fill: var(--background-primary);
+  }
+
+  &Editable {
+    cursor: pointer;
+  }
+}
+
+.error {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  color: var(--content-red);
+
+  svg {
+    stroke: var(--border-red);
+  }
+}
