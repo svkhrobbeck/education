@@ -1,3 +1,7 @@
+:root {
+  @include theme-light;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
