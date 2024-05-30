@@ -1,0 +1,40 @@
+@import "@/assets/styles/base/responsive";
+
+.footer {
+  color: var(--content-white);
+  font-size: 16px;
+  background-color: var(--background-primary);
+  padding: 25px 0;
+
+  &Container {
+    display: grid !important;
+    gap: 10px 40px;
+    grid-template-columns: 1fr auto auto;
+
+    @media (max-width: $tablet-small) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &Copyright {
+    margin: 0;
+
+    @media (max-width: $tablet-small) {
+      grid-column: 1 / span 2;
+    }
+  }
+
+  &Link {
+    display: flex;
+    color: inherit;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: var(--content-gray-light);
+    }
+
+    @media (max-width: $tablet-small) {
+      text-align: center;
+    }
+  }
+}
