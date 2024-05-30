@@ -5,10 +5,8 @@ import { ContainerProps } from "./container.props";
 
 import cls from "./container.module.scss";
 
-const Container: FC<ContainerProps> = ({ children, type = "default" }) => {
-  return (
-    <div className={cx(cls.container, cls[`container--${type}`])}>{children}</div>
-  );
+const Container: FC<ContainerProps> = ({ children, className, type = "default" }) => {
+  return <div className={cx(cls.container, cls[`container--${type}`], className)}>{children}</div>;
 };
 
 export default Container;

@@ -1,9 +1,10 @@
 .container {
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 
   &--default {
-    max-width: 1280px;
+    max-width: 1520px;
   }
 
   &--mini {
