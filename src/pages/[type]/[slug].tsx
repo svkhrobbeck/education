@@ -8,7 +8,7 @@ import * as Constants from "@/helpers/constants";
 const SlugPage: NextPage<SlugPageProps> = props => {
   console.log(props);
 
-  return <>Courses Page</>;
+  return <></>;
 };
 
 export const getServerSideProps: GetServerSideProps<SlugPageProps> = async ({ query }) => {

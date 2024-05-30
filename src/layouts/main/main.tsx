@@ -8,7 +8,7 @@ const Main = <T extends Record<string, unknown> & IContext>(Component: FunctionC
   return function LayoutWithProps(props: T) {
     return (
       <Layout>
-        <ContextProvider menu={props.menu} category={props.category}>
+        <ContextProvider menu={props.menu}>
           <Component {...props} />
         </ContextProvider>
       </Layout>
