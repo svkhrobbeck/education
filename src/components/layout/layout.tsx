@@ -1,14 +1,18 @@
-import { IChildren } from "@/helpers/interfaces";
+import cx from "classnames";
+
+import { LayoutProps } from "./layout.props";
 import { Footer, Header, Sidebar } from "./components";
 
-const Layout = ({ children }: IChildren) => {
+import cls from "./layout.module.scss";
+
+const Layout = ({ children, className, ...props }: LayoutProps) => {
   return (
-    <>
-      <Header />
-      <Sidebar />
-      {children}
-      <Footer />
-    </>
+    <div className={cx(cls.layout, className)} {...props}>
+      <Header className={cls.layoutHeader} />
+      <main className={cls.layoutMain}>{children}</main>
+      <Sidebar className={cls.layoutSidebar} />
+      <Footer className={cls.layoutFooter} />
+    </div>
   );
 };
 

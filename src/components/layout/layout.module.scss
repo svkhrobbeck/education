@@ -1,0 +1,44 @@
+@import "@/assets/styles/base/responsive";
+
+.layout {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: auto minmax(320px, 1200px) 320px auto;
+  grid-template-rows: max-content auto max-content;
+  grid-template-areas:
+    "header header header header"
+    ". body sidebar ."
+    "footer footer footer footer";
+
+  @media only screen and (max-width: $tablet-small) {
+    grid-template-areas: "header" "body" "footer";
+    grid-template-rows: max-content auto max-content;
+    grid-template-columns: minmax(320px, 1fr);
+  }
+
+  &Header {
+    grid-area: header;
+    // display: none;
+
+    @media only screen and (max-width: $tablet-small) {
+      display: block;
+    }
+  }
+
+  &Main {
+    grid-area: body;
+    padding: 0 20px;
+  }
+
+  &Sidebar {
+    grid-area: sidebar;
+
+    @media only screen and (max-width: $tablet-small) {
+      display: none;
+    }
+  }
+
+  &Footer {
+    grid-area: footer;
+  }
+}
