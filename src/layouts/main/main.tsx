@@ -7,11 +7,11 @@ import { Layout } from "@/components";
 const Main = <T extends Record<string, unknown> & IContext>(Component: FunctionComponent<T>) => {
   return function LayoutWithProps(props: T) {
     return (
-      <Layout>
-        <ContextProvider menu={props.menu}>
+      <ContextProvider menu={props.menu} category={props.category}>
+        <Layout>
           <Component {...props} />
-        </ContextProvider>
-      </Layout>
+        </Layout>
+      </ContextProvider>
     );
   };
 };
