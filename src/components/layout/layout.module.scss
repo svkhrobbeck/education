@@ -3,7 +3,7 @@
 .layout {
   flex-grow: 1;
   display: grid;
-  grid-template-columns: auto minmax(320px, 1200px) 320px auto;
+  grid-template-columns: auto minmax(320px, 1160px) 320px auto;
   grid-template-rows: max-content auto max-content;
   grid-template-areas:
     "header header header header"

@@ -1,6 +1,6 @@
 @mixin theme-light {
   // BACKGROUND COLORS
-  --background-white: rgb(245, 245, 204);
+  --background-white: #f8f8f8;
   --background-black: #3b434e;
   --background-blue: #2d4191;
   --background-primary: #0a2d56;
@@ -25,7 +25,7 @@
   --background-loading-full: rgba(255, 255, 255, 0.5);
 
   // TEXT COLORS
-  --content-white: rgb(245, 245, 204);
+  --content-white: #f8f8f8;
   --content-black: #3b434e;
   --content-blue: #2d4191;
   --content-primary: #0a2d56;
@@ -44,7 +44,7 @@
   --content-gray-dark: #787d85;
 
   // BORDER COLORS
-  --border-white: rgb(245, 245, 204);
+  --border-white: #f8f8f8;
   --border-blue: #2d4191;
   --border-primary: #0a2d56;
   --border-primary-hover: #08011a;
