@@ -43,6 +43,8 @@
   }
 
   &Name {
+    position: relative;
+    z-index: 20;
     margin-top: 0;
     margin-bottom: 10px;
     cursor: pointer;
@@ -60,6 +62,7 @@
 
   &Item {
     position: relative;
+    z-index: 2;
     cursor: pointer;
     color: var(--border-gray-light);
     font-weight: 400;
@@ -78,6 +81,7 @@
 
     &Link {
       position: absolute;
+      z-index: 1;
       inset: 0;
     }
   }
