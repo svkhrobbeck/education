@@ -14,7 +14,7 @@ const SlugPage: NextPage<SlugPageProps> = props => {
 export const getServerSideProps: GetServerSideProps<SlugPageProps> = async ({ query }) => {
   const { type, slug } = query;
   const url = process.env.NEXT_PUBLIC_DOMAIN!;
-  const category = Constants.levelMenu.find(c => c.route === type)?.id;
+  const category = Constants.levelMenu.find(c => c.route === type)?.id as number;
 
   try {
     const [page, menu, products] = await Promise.all([
@@ -24,7 +24,7 @@ export const getServerSideProps: GetServerSideProps<SlugPageProps> = async ({ qu
     ]);
 
     return {
-      props: { menu, page, products },
+      props: { menu, page, products, category },
     };
   } catch (_) {
     return {
@@ -36,6 +36,7 @@ export const getServerSideProps: GetServerSideProps<SlugPageProps> = async ({ qu
 interface SlugPageProps extends Record<string, unknown> {
   page: Types.Page.Model;
   menu: Types.Menu.Item[];
+  category: number;
   products: Types.Product.Model[];
 }
 

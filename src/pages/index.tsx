@@ -11,15 +11,17 @@ const HomePage: NextPage<HomeProps> = props => {
 };
 
 export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
-  const { data: menu } = await axios.post(`${process.env.NEXT_PUBLIC_DOMAIN}/api/page`, { category: 0 });
+  const category = 0;
+  const { data: menu } = await axios.post(`${process.env.NEXT_PUBLIC_DOMAIN}/api/page`, { category });
 
   return {
-    props: { menu },
+    props: { menu, category },
   };
 };
 
 interface HomeProps extends Record<string, unknown> {
   menu: Types.Menu.Item[];
+  category: number;
 }
 
 export default Layouts.Main(HomePage);
