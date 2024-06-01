@@ -16,11 +16,11 @@
   }
 
   &:hover svg {
-    fill: var(--background-primary);
+    fill: var(--background-primary-hover);
   }
 
   &Filled svg {
-    fill: var(--background-primary);
+    fill: var(--background-primary-hover);
   }
 
   &Editable {

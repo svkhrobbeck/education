@@ -12,10 +12,10 @@
 
     &Active,
     &:hover {
-      color: var(--content-primary);
+      color: var(--content-primary-hover);
 
       svg {
-        fill: var(--background-primary);
+        fill: var(--background-primary-hover);
       }
     }
 
@@ -49,14 +49,13 @@
     margin-bottom: 10px;
     cursor: pointer;
     text-transform: uppercase;
-    color: var(--content-primary);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     width: 100%;
     padding: 20px 16px;
     border-radius: 18px;
-    background-color: rgba(245, 245, 204, 0.4);
+    background-color: rgba(var(--background-teal), 0.4);
     border: 1px solid #e5e5e5;
   }
 
@@ -76,7 +75,7 @@
 
     &Active,
     &:hover {
-      color: var(--content-primary);
+      color: var(--content-primary-hover);
     }
 
     &Link {
