@@ -1,7 +1,16 @@
 .divider {
-  width: 100%;
-  height: 1px;
   border: none;
   background-color: var(--border-gray-light);
-  margin: 10px 0;
+
+  &--horizontal {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+  }
+
+  &--vertical {
+    width: 1px;
+    height: 100%;
+    margin: 0 auto;
+  }
 }

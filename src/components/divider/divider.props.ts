@@ -1,3 +1,5 @@
 import { ComponentProps } from "react";
 
-export type DividerProps = ComponentProps<"hr">;
+export type DividerProps = ComponentProps<"hr"> & {
+  direction?: "horizontal" | "vertical";
+};
