@@ -1,14 +1,24 @@
 @import "@/assets/styles/base/responsive";
 
 .hh {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 30px;
-  margin-top: 10px;
+  margin-bottom: 50px;
 
-  @media screen and (max-width: $laptop-medium) {
-    grid-template-columns: 1fr;
+  &Inner {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+
+    @media screen and (max-width: $laptop-medium) {
+      grid-template-columns: 1fr;
+    }
   }
+}
+
+.header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .count {

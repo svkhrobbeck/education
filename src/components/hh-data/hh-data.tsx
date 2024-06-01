@@ -3,50 +3,59 @@ import { FC } from "react";
 import * as Types from "@/helpers/interfaces";
 import * as Utils from "@/helpers/utils";
 
-import { Card, Icon } from "..";
+import { Card, Heading, Icon, Tag } from "..";
 
 import cls from "./hh-data.module.scss";
 
-const HhData: FC<Types.Page.HhData> = ({ count, juniorSalary, middleSalary, seniorSalary }) => {
+const HhData: FC<Types.Page.Model> = props => {
   return (
-    <div className={cls.hh}>
-      <Card className={cls.count}>
-        <div className={cls.title}>All Vacations</div>
-        <div className={cls.countValue}>{count}</div>
-      </Card>
+    <section className={cls.hh}>
+      <div className={cls.header}>
+        <Heading tag="h2">Vacations - {props.category}</Heading>
+        <Tag color="red" size="m">
+          hh.uz
+        </Tag>
+      </div>
 
-      <Card className={cls.salary}>
-        <div>
-          <div className={cls.title}>Junior</div>
-          <div className={cls.salaryValue}>{Utils.convertToUSD(juniorSalary)}</div>
-          <div className={cls.rate}>
-            <Icon {...{ className: cls.filled, name: "Rate", color: "#bbb", width: 21, height: 21 }} />
-            <Icon {...{ name: "Rate", color: "#bbb", width: 21, height: 21 }} />
-            <Icon {...{ name: "Rate", color: "#bbb", width: 21, height: 21 }} />
-          </div>
-        </div>
+      <div className={cls.hhInner}>
+        <Card className={cls.count}>
+          <div className={cls.title}>All Vacations</div>
+          <div className={cls.countValue}>{props?.hh?.count}</div>
+        </Card>
 
-        <div>
-          <div className={cls.title}>Middle</div>
-          <div className={cls.salaryValue}>{Utils.convertToUSD(middleSalary)}</div>
-          <div className={cls.rate}>
-            <Icon {...{ className: cls.filled, name: "Rate", color: "#bbb", width: 21, height: 21 }} />
-            <Icon {...{ className: cls.filled, name: "Rate", color: "#bbb", width: 21, height: 21 }} />
-            <Icon {...{ name: "Rate", color: "#bbb", width: 21, height: 21 }} />
+        <Card className={cls.salary}>
+          <div>
+            <div className={cls.title}>Junior</div>
+            <div className={cls.salaryValue}>{Utils.convertToUSD(props?.hh?.juniorSalary)}</div>
+            <div className={cls.rate}>
+              <Icon {...{ className: cls.filled, name: "Rate", color: "#bbb", width: 21, height: 21 }} />
+              <Icon {...{ name: "Rate", color: "#bbb", width: 21, height: 21 }} />
+              <Icon {...{ name: "Rate", color: "#bbb", width: 21, height: 21 }} />
+            </div>
           </div>
-        </div>
 
-        <div>
-          <div className={cls.title}>Senior</div>
-          <div className={cls.salaryValue}>{Utils.convertToUSD(seniorSalary)}</div>
-          <div className={cls.rate}>
-            <Icon {...{ className: cls.filled, name: "Rate", color: "#bbb", width: 21, height: 21 }} />
-            <Icon {...{ className: cls.filled, name: "Rate", color: "#bbb", width: 21, height: 21 }} />
-            <Icon {...{ className: cls.filled, name: "Rate", color: "#bbb", width: 21, height: 21 }} />
+          <div>
+            <div className={cls.title}>Middle</div>
+            <div className={cls.salaryValue}>{Utils.convertToUSD(props?.hh?.middleSalary)}</div>
+            <div className={cls.rate}>
+              <Icon {...{ className: cls.filled, name: "Rate", color: "#bbb", width: 21, height: 21 }} />
+              <Icon {...{ className: cls.filled, name: "Rate", color: "#bbb", width: 21, height: 21 }} />
+              <Icon {...{ name: "Rate", color: "#bbb", width: 21, height: 21 }} />
+            </div>
           </div>
-        </div>
-      </Card>
-    </div>
+
+          <div>
+            <div className={cls.title}>Senior</div>
+            <div className={cls.salaryValue}>{Utils.convertToUSD(props?.hh?.seniorSalary)}</div>
+            <div className={cls.rate}>
+              <Icon {...{ className: cls.filled, name: "Rate", color: "#bbb", width: 21, height: 21 }} />
+              <Icon {...{ className: cls.filled, name: "Rate", color: "#bbb", width: 21, height: 21 }} />
+              <Icon {...{ className: cls.filled, name: "Rate", color: "#bbb", width: 21, height: 21 }} />
+            </div>
+          </div>
+        </Card>
+      </div>
+    </section>
   );
 };
 
