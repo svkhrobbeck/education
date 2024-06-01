@@ -13,3 +13,4 @@ export { default as Divider } from "./divider";
 export { default as Heading } from "./heading";
 export { default as Textarea } from "./textarea";
 export { default as Container } from "./container";
+export { default as Advantages } from "./advantages";
