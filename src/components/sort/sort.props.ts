@@ -1,11 +1,8 @@
 import { ComponentProps } from "react";
 
-export interface SortProps extends ComponentProps<"div"> {
-  sort: SortEnum;
-  setSort: (sort: SortEnum) => void;
-}
+import * as Enums from "@/helpers/enums";
 
-export enum SortEnum {
-  Rating,
-  Price,
+export interface SortProps extends ComponentProps<"div"> {
+  sort: Enums.Sorts;
+  setSort: (sort: Enums.Sorts) => void;
 }
