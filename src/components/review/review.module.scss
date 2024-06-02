@@ -1,0 +1,31 @@
+@import "@/assets/styles/base/responsive";
+
+.review {
+  display: grid;
+  grid-template-columns: [start] auto 1fr auto [end];
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 24px;
+
+  &Title {
+    display: flex;
+    align-items: flex-start;
+    gap: 3px 10px;
+    flex-wrap: wrap;
+  }
+
+  &Name {
+    font-weight: bold;
+  }
+
+  &Description {
+    grid-column: start / end;
+  }
+
+  &Rating {
+    @media screen and (max-width: $mobile-large) {
+      grid-column: start / end;
+    }
+  }
+}

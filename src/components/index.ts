@@ -7,6 +7,7 @@ export { default as Input } from "./input";
 export { default as Button } from "./button";
 export { default as Rating } from "./rating";
 export { default as Layout } from "./layout";
+export { default as Review } from "./review";
 export { default as Skills } from "./skills";
 export { default as HhData } from "./hh-data";
 export { default as Divider } from "./divider";
