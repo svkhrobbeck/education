@@ -2,9 +2,27 @@ html {
   height: 100%;
 }
 
+* {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: rgba(var(--background-teal), 0.7);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--background-teal));
+  }
+}
+
 *:focus {
-  outline: 2px dashed var(--content-black);
-  outline-offset: 3px;
+  outline: none;
 }
 
 body {
