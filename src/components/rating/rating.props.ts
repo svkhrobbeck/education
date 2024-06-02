@@ -1,4 +1,4 @@
-import { ComponentProps } from "react";
+import { ComponentProps, ForwardedRef } from "react";
 import { FieldError } from "react-hook-form";
 
 export type RatingProps = ComponentProps<"div"> & {
@@ -7,3 +7,5 @@ export type RatingProps = ComponentProps<"div"> & {
   editable?: boolean;
   setRating?: (rating: number) => void;
 };
+
+export type RatingRefType = ForwardedRef<HTMLDivElement>;
