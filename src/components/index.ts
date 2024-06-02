@@ -12,6 +12,7 @@ export { default as Review } from "./review";
 export { default as Skills } from "./skills";
 export { default as HhData } from "./hh-data";
 export { default as Divider } from "./divider";
+export { default as Product } from "./product";
 export { default as Heading } from "./heading";
 export { default as Textarea } from "./textarea";
 export { default as Container } from "./container";
