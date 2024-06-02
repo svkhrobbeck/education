@@ -1,3 +1,4 @@
+import { FC, Fragment } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import { Icon } from "@/components";
 
 import cls from "./menu.module.scss";
 
-const Menu = () => {
+const Menu: FC = () => {
   const { menu, setMenu, category } = useContext();
   const router = useRouter();
 
@@ -55,14 +56,14 @@ const Menu = () => {
     return (
       <>
         {Constants.levelMenu.map(item => (
-          <div key={item.route}>
+          <Fragment key={item.route}>
             <div className={cx(cls.menuItem, item.id === category && cls.levelActive)}>
               <Link className={cls.menuItemLink} href={`/${item.route}/${menu[0].pages[0]._id}`} />
               <Icon width={24} height={24} name={item.iconName} color="#787d85" />
               <span>{item.name}</span>
             </div>
             {item.id == category && renderAccordions(item)}
-          </div>
+          </Fragment>
         ))}
       </>
     );

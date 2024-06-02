@@ -1,10 +1,13 @@
 .sidebar {
+  position: relative;
   display: grid;
   align-content: flex-start;
-  position: relative;
-  padding: 10px 20px 10px 2px;
-  height: 100vh;
-  position: sticky;
-  top: 10px;
-  overflow-y: auto;
+
+  &Inner {
+    padding: 10px 20px 10px 2px;
+    height: 100vh;
+    position: sticky;
+    top: 10px;
+    overflow-y: auto;
+  }
 }

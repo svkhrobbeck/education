@@ -10,10 +10,12 @@ import cls from "./sidebar.module.scss";
 const Sidebar: FC<SidebarProps> = ({ className, ...props }) => {
   return (
     <aside className={cx(cls.sidebar, className)} {...props}>
-      <Logo />
-      <Divider />
-      <Search />
-      <Menu />
+      <div className={cls.sidebarInner}>
+        <Logo />
+        <Divider />
+        <Search />
+        <Menu />
+      </div>
     </aside>
   );
 };
