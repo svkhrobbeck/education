@@ -1,3 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding: 5px 0;
+}
+
 .input {
   padding: 7px 15px;
   color: var(--content-black);
@@ -9,6 +17,7 @@
   border-radius: 5px;
   font-family: inherit;
   border: 1px solid var(--border-primary);
+  width: 100%;
 
   &::placeholder {
     color: var(--content-gray);
@@ -17,14 +26,6 @@
   &Error {
     border-color: var(--border-red);
   }
-}
-
-.wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 5px 0;
 }
 
 .error {

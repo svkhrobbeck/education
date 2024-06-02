@@ -3,26 +3,26 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: 40px;
+  user-select: none;
 
-  &Icon {
+  .sortIcon {
     display: none;
   }
 
   span {
-    display: grid;
-    grid-template-columns: 20px 1fr;
+    display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     cursor: pointer;
   }
+}
 
-  &.active {
-    font-weight: bold;
-    color: var(--border-primary);
+.active {
+  font-weight: bold;
+  color: var(--border-primary);
 
-    .sortIcon {
-      display: block;
-      margin-right: 8px;
-    }
+  .sortIcon {
+    display: block;
+    margin-right: 8px;
   }
 }

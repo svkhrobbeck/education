@@ -65,3 +65,11 @@ body {
 main {
   flex-grow: 1;
 }
+
+// customs
+.slug-page-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}

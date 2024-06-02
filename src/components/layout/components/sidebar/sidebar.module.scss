@@ -1,5 +1,10 @@
 .sidebar {
   display: grid;
   align-content: flex-start;
-  padding: 10px 20px 10px 0;
+  position: relative;
+  padding: 10px 20px 10px 2px;
+  height: 100vh;
+  position: sticky;
+  top: 10px;
+  overflow-y: auto;
 }
