@@ -7,7 +7,9 @@ import cls from "./card.module.scss";
 
 const Card: FC<CardProps> = ({ className, children, color = "primary", ...props }) => {
   return (
-    <div className={cx(cls.card, className, cls[`card--${color}`])} {...props}>{children}</div>
+    <div className={cx(cls.card, className, cls[`card--${color}`])} {...props}>
+      {children}
+    </div>
   );
 };
 
