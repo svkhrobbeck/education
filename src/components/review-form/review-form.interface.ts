@@ -4,14 +4,14 @@ export interface ReviewFormProps extends ComponentProps<"div"> {
   productId: string;
 }
 
-export interface IReviewForm {
+export interface ReviewFormValues {
   name: string;
   title: string;
   description: string;
   rating: number;
 }
 
-export interface IReviewResponse {
+export interface ReviewResponse {
   name: string;
   rating: number;
   description: string;

@@ -7,6 +7,7 @@ import { Button, Input, Rating, Textarea } from "..";
 import { Error, Success } from "./components";
 
 import cls from "./review-form.module.scss";
+import axios from "axios";
 
 const ReviewForm: FC<Interfaces.ReviewFormProps> = ({ className, productId, ...props }) => {
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
@@ -18,10 +19,21 @@ const ReviewForm: FC<Interfaces.ReviewFormProps> = ({ className, productId, ...p
     control,
     reset,
     formState: { errors },
-  } = useForm<Interfaces.IReviewForm>();
+  } = useForm<Interfaces.ReviewFormValues>();
 
-  const onSubmit = async () => {
-    reset();
+  const onSubmit = async (values: Interfaces.ReviewFormValues) => {
+    setError(false);
+    setIsSuccess(false);
+
+    try {
+      const { status } = await axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/posts`, { ...values, productId });
+      if (status === 201) {
+        setIsSuccess(true);
+        reset();
+      }
+    } catch {
+      setError(true);
+    }
   };
 
   return (
@@ -42,9 +54,11 @@ const ReviewForm: FC<Interfaces.ReviewFormProps> = ({ className, productId, ...p
         <div className={cls.rating}>
           <span>Rating: </span>
           <Controller
-            rules={{ required: { value: true, message: "Rating is required" } }}
-            control={control}
-            name={"rating"}
+            {...{
+              control,
+              name: "rating",
+              rules: { required: { value: true, message: "Rating is required" } },
+            }}
             render={({ field }) => (
               <Rating editable rating={field.value} error={errors.rating} ref={field.ref} setRating={field.onChange} />
             )}
