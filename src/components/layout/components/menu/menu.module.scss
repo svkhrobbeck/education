@@ -1,6 +1,6 @@
 .menu {
   &Item {
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     position: relative;
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@
 }
 
 .accordion {
-  padding: 0 8px 0 16px;
+  padding: 10px 8px 10px 16px;
   border-right: 1px solid #e5e5e5;
 
   &WrapperOpen {
@@ -46,7 +46,6 @@
     position: relative;
     z-index: 20;
     margin-top: 0;
-    margin-bottom: 10px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 500;
