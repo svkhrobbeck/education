@@ -1,14 +1,39 @@
+import { useEffect, useReducer } from "react";
 import { GetServerSideProps, NextPage } from "next";
 import axios from "axios";
 
-import * as Layouts from "@/layouts";
-import * as Types from "@/helpers/interfaces";
+import sortReducer from "@/reducers/sort.reducer";
 import * as Constants from "@/helpers/constants";
+import * as Types from "@/helpers/interfaces";
+import * as Enums from "@/helpers/enums";
+import * as Layouts from "@/layouts";
 
-const SlugPage: NextPage<SlugPageProps> = props => {
-  console.log(props);
+import { Advantages, Heading, HhData, Products, Skills, Sort } from "@/components";
 
-  return <></>;
+const SlugPage: NextPage<SlugPageProps> = ({ page, products }) => {
+  const [state, dispatch] = useReducer(sortReducer, { sort: Enums.Sorts.Rating, products });
+
+  const setSort = (sort: Enums.Sorts) => {
+    dispatch({ type: sort });
+  };
+
+  useEffect(() => {
+    dispatch({ type: "reset", initialState: products });
+  }, [products]);
+
+  return (
+    <>
+      <div className="slug-page-title-wrapper">
+        <Heading tag="h1">{page.title}</Heading>
+        <Sort sort={state.sort} setSort={setSort} />
+      </div>
+
+      <Products products={state.products} />
+      <HhData {...page} />
+      <Advantages {...page} />
+      <Skills {...page} />
+    </>
+  );
 };
 
 export const getServerSideProps: GetServerSideProps<SlugPageProps> = async ({ query }) => {
@@ -34,9 +59,9 @@ export const getServerSideProps: GetServerSideProps<SlugPageProps> = async ({ qu
 };
 
 interface SlugPageProps extends Record<string, unknown> {
+  category: number;
   page: Types.Page.Model;
   menu: Types.Menu.Item[];
-  category: number;
   products: Types.Product.Model[];
 }
 
