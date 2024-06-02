@@ -3,7 +3,7 @@ import cx from "classnames";
 
 import { SidebarProps } from "./sidebar.props";
 import { Divider, Logo } from "@/components";
-import { Menu } from "..";
+import { Menu, Search } from "..";
 
 import cls from "./sidebar.module.scss";
 
@@ -12,6 +12,7 @@ const Sidebar: FC<SidebarProps> = ({ className, ...props }) => {
     <aside className={cx(cls.sidebar, className)} {...props}>
       <Logo />
       <Divider />
+      <Search />
       <Menu />
     </aside>
   );
