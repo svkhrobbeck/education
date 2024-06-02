@@ -48,7 +48,7 @@ const Rating: FC<Types.RatingProps> = forwardRef(
     }, [rating]);
 
     return (
-      <div className={cx(cls.rating, !!error && cls.ratingErorr, className)} ref={ref} {...props}>
+      <div className={cx(cls.rating, !!error && cls.ratingError, className)} ref={ref} {...props}>
         {ratings.map(rating => (
           <Fragment key={uuidv4()}>{rating}</Fragment>
         ))}

@@ -3,7 +3,7 @@
   position: relative;
   flex-direction: column;
   width: 100%;
-  padding: 5px 0;
+  padding: 5px 0 10px;
 }
 
 .textarea {
@@ -32,5 +32,8 @@
 
 .error {
   margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
   color: var(--content-red);
 }
