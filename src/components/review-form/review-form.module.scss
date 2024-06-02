@@ -1,0 +1,78 @@
+@import "@/assets/styles/base/responsive";
+
+.reviewForm {
+  display: grid;
+  grid-template-columns: [start] auto auto auto [end];
+  align-items: center;
+  gap: 15px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  @media screen and (max-width: $tablet-small) {
+    grid-template-columns: [start] 1fr 1fr [end];
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    grid-template-columns: [start] 1fr [end];
+  }
+}
+
+.description {
+  grid-column: start / end;
+}
+
+.title {
+  justify-self: left;
+  min-width: 100px;
+
+  @media screen and (max-width: $tablet-small) {
+    justify-self: normal;
+  }
+}
+
+.rating {
+  display: flex;
+  gap: 20px;
+
+  @media screen and (max-width: $tablet-small) {
+    grid-column: start / end;
+  }
+}
+
+.submit {
+  grid-column: start / end;
+}
+
+.info {
+  margin-left: 15px;
+}
+
+.panel {
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.success {
+  background-color: var(--background-green-light);
+}
+
+.error {
+  background-color: var(--background-red-light);
+
+  .close path {
+    stroke: var(--border-red);
+  }
+}
+
+.successTitle {
+  font-weight: bold;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}

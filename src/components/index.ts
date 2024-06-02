@@ -18,3 +18,4 @@ export { default as Products } from "./products";
 export { default as Textarea } from "./textarea";
 export { default as Container } from "./container";
 export { default as Advantages } from "./advantages";
+export { default as ReviewForm } from "./review-form";
