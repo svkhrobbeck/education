@@ -1,7 +1,6 @@
-import { ComponentProps } from "react";
-import { IChildren } from "@/helpers/interfaces";
+import { ComponentProps, PropsWithChildren } from "react";
 
-type BtnTagProps = ComponentProps<"button"> & IChildren;
+type BtnTagProps = PropsWithChildren<ComponentProps<"button">>;
 
 export type ButtonProps = BtnTagProps & {
   appearance: "primary" | "ghost" | "failure" | "success";

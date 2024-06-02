@@ -89,18 +89,18 @@
 
     &-right {
       display: inline-block;
-      margin-left: 10px;
+      transition: all 0.3s ease;
     }
 
     &-down {
       transform: rotate(90deg);
-      transition: all 0.2s ease;
+      transition: all 0.4s ease;
     }
   }
 
   &__inner {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 10px;
   }
 }
