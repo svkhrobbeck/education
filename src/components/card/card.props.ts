@@ -1,8 +1,7 @@
-import { ComponentProps } from "react";
-import { IChildren } from "@/helpers/interfaces";
+import { ComponentProps, ForwardedRef } from "react";
 
-type DivProps = ComponentProps<"div"> & IChildren;
-
-export interface CardProps extends DivProps {
+export interface CardProps extends ComponentProps<"div"> {
   color?: "white" | "primary";
 }
+
+export type CardRefType = ForwardedRef<HTMLDivElement>;
