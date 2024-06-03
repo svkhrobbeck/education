@@ -2,8 +2,8 @@ import { FC } from "react";
 import cx from "classnames";
 
 import { SidebarProps } from "./sidebar.props";
-import { Divider, Logo } from "@/components";
-import { Menu, Search } from "..";
+import { Divider } from "@/components";
+import { Menu, Search, Logo } from "..";
 
 import cls from "./sidebar.module.scss";
 
