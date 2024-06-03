@@ -1,0 +1,32 @@
+@import "@/assets/styles/base/responsive";
+
+.header {
+  display: none;
+  padding: 16px 0;
+
+  @media screen and (max-width: $tablet-medium) {
+    display: block;
+
+    &Container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+.mobileMenu {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 6px 4px 10px;
+  background-color: var(--background-white);
+}
+
+.closeIcon {
+  z-index: 61;
+}
