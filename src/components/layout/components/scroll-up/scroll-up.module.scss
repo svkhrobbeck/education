@@ -1,20 +1,9 @@
 .scrollUp {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--background-primary);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  background-color: transparent;
   position: fixed;
   z-index: 300;
   bottom: 30px;
   right: 30px;
   cursor: pointer;
   border: none;
-
-  &:hover {
-    background-color: var(--background-primary-hover);
-  }
 }

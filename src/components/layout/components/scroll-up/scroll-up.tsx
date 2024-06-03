@@ -2,7 +2,7 @@ import { FC } from "react";
 import { motion } from "framer-motion";
 
 import { useScrollY } from "@/hooks";
-import { Icon } from "@/components";
+import { IconButton } from "@/components";
 
 import cls from "./scroll-up.module.scss";
 
@@ -27,7 +27,7 @@ const ScrollUp: FC = () => {
           }}
           onClick={scrollToTop}
         >
-          <Icon {...{ name: "Up", width: 21, height: 13, color: "#fff" }} />
+          <IconButton {...{ name: "Up", width: 21, height: 13, color: "#fff" }} />
         </motion.button>
       )}
     </>
