@@ -1,3 +1,4 @@
+export { default as Up } from "./up";
 export { default as Rate } from "./rate";
 export { default as Star } from "./star";
 export { default as User } from "./user";
