@@ -37,7 +37,13 @@ const Search: FC<SearchProps> = ({ className, ...props }) => {
 
   return (
     <div className={cx(cls.search, className)} {...props}>
-      <Input placeholder="Search..." className={cls.input} value={search} onChange={changeHandler} />
+      <Input
+        className={cls.input}
+        wrapperClassName={cls.inputWrapper}
+        placeholder="Search..."
+        value={search}
+        onChange={changeHandler}
+      />
       <Button appearance="primary" className={cls.button}>
         <Icon {...{ name: "Search", color: "#fff", width: 15, height: 15 }} />
       </Button>
