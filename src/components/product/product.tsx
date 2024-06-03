@@ -56,9 +56,9 @@ const Product: FC<ProductProps> = ({ product, className, ...props }): JSX.Elemen
         <div className={cls.priceTitle}>Price</div>
         <div className={cls.creditTitle}>Credit</div>
         <div className={cls.ratingTitle}>
-          <a href="#review" onClick={scrollToReview}>
+          <span className={cls.reviewScoller} onClick={scrollToReview}>
             {product.reviewCount} {Utils.dedectedReview(product.reviewCount)}
-          </a>
+          </span>
         </div>
 
         <Divider className={cls.hr} />
@@ -106,7 +106,7 @@ const Product: FC<ProductProps> = ({ product, className, ...props }): JSX.Elemen
         </div>
       </Card>
 
-      <Card className={cls.reviews}>
+      <Card className={cls.reviews} ref={reviewRef}>
         {!!product.reviews.length && product.reviews.map(r => <Review {...r} key={r._id} />)}
         <ReviewForm productId={product._id} />
       </Card>
