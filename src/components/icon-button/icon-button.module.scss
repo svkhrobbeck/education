@@ -1,0 +1,40 @@
+.iconbutton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-primary);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+
+  &--primary {
+    background-color: var(--background-primary);
+
+    &:hover {
+      background-color: var(--background-primary-hover);
+    }
+
+    svg * {
+      fill: var(--background-white);
+    }
+  }
+
+  &--white {
+    background-color: var(--background-white);
+
+    svg * {
+      fill: var(--background-primary);
+    }
+
+    &:hover {
+      background-color: var(--background-primary);
+
+      svg * {
+        fill: var(--background-white);
+      }
+    }
+  }
+}

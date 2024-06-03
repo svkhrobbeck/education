@@ -19,3 +19,4 @@ export { default as Textarea } from "./textarea";
 export { default as Container } from "./container";
 export { default as Advantages } from "./advantages";
 export { default as ReviewForm } from "./review-form";
+export { default as IconButton } from "./icon-button";
