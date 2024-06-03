@@ -16,7 +16,7 @@
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
-    "framer-motion": "^11.2.4",
+    "framer-motion": "^11.2.10",
     "lodash": "^4.17.21",
     "next": "14.2.3",
     "normalize.css": "^8.0.1",
