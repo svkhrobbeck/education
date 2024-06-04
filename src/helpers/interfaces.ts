@@ -1,8 +1,11 @@
 import { ReactNode } from "react";
 
+import { Icons } from "@/assets";
 import { Categories } from "./enums";
 
 export type IChildren = Readonly<{ children: ReactNode }>;
+
+export type IConsType = keyof typeof Icons;
 
 // eslint-disable-next-line
 export declare namespace Menu {
@@ -22,7 +25,7 @@ export declare namespace Menu {
   export interface Level {
     route: string;
     name: string;
-    iconName: string;
+    iconName: IConsType;
     id: Categories;
   }
 }

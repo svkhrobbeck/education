@@ -1,11 +1,9 @@
 import { ComponentProps } from "react";
 
-import { Icons } from "@/assets";
-
-type NameType = keyof typeof Icons;
+import { IConsType } from "@/helpers/interfaces";
 
 export type IconProps = ComponentProps<"span"> & {
-  name: NameType;
+  name: IConsType;
   color?: string;
   width?: number;
   height?: number;
