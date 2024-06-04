@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "node .husky/install.mjs",
-    "commitlint": "commitlint --edit"
+    "commitlint": "commitlint --edit",
+    "storybook": "storybook dev -p 4001",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
@@ -30,9 +32,18 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.5",
+    "@chromatic-com/storybook": "1.5.0",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@next/eslint-plugin-next": "^14.2.3",
+    "@storybook/addon-essentials": "^8.1.5",
+    "@storybook/addon-interactions": "^8.1.5",
+    "@storybook/addon-links": "^8.1.5",
+    "@storybook/addon-onboarding": "^8.1.5",
+    "@storybook/blocks": "^8.1.5",
+    "@storybook/nextjs": "^8.1.5",
+    "@storybook/react": "^8.1.5",
+    "@storybook/test": "^8.1.5",
     "@svgr/webpack": "^8.1.0",
     "@types/lodash": "^4.17.4",
     "@types/node": "^20",
@@ -52,6 +63,7 @@
     "prettier": "^3.2.5",
     "sass": "^1.77.2",
     "storybook-addon-next": "^1.8.0",
+    "storybook": "^8.1.5",
     "typescript": "^5"
   }
 }
