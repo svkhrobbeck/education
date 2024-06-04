@@ -5,7 +5,6 @@ import { Analytics } from "@vercel/analytics/react";
 
 import "@/assets/styles/main.scss";
 
-
 const inter = Inter({
   weight: ["300", "400", "500", "600", "700", "900"],
   style: ["normal"],
@@ -17,8 +16,8 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <style jsx global>{`
-        html {
-          font-family: ${inter.style.fontFamily};
+        * {
+          font-family: ${inter.style.fontFamily} !important;
         }
       `}</style>
       <Head>
