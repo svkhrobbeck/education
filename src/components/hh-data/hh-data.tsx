@@ -1,13 +1,13 @@
 import { FC } from "react";
 
-import * as Types from "@/helpers/interfaces";
 import * as Utils from "@/helpers/utils";
+import { HhDataProps } from "./hh-data.props";
 
 import { Card, Heading, Icon, Tag } from "..";
 
 import cls from "./hh-data.module.scss";
 
-const HhData: FC<Types.Page.Model> = props => {
+const HhData: FC<HhDataProps> = props => {
   return (
     <section className={cls.hh}>
       <div className={cls.header}>

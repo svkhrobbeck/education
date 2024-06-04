@@ -1,11 +1,11 @@
 import { FC } from "react";
 
-import * as Types from "@/helpers/interfaces";
+import { AdvantagesProps } from "./advantages.props";
 import { Divider, Heading, Icon, Text } from "..";
 
 import cls from "./advantages.module.scss";
 
-const Advantages: FC<Types.Page.Model> = props => {
+const Advantages: FC<AdvantagesProps> = props => {
   return (
     <section className={cls.advantages}>
       <Heading className={cls.heading} tag="h2">

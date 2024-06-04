@@ -6,8 +6,8 @@ import * as Props from "./card.props";
 import cls from "./card.module.scss";
 
 const Card: FC<Props.CardProps> = forwardRef(
-  ({ className, children, color = "primary", ...props }, ref: Props.CardRefType) => (
-    <div className={cx(cls.card, className, cls[`card--${color}`])} ref={ref} {...props}>
+  ({ className, children, appearance = "primary", ...props }, ref: Props.CardRefType) => (
+    <div className={cx(cls.card, className, cls[`card--${appearance}`])} ref={ref} {...props}>
       {children}
     </div>
   ),

@@ -7,11 +7,19 @@ import { Icon } from "..";
 
 import cls from "./button.module.scss";
 
-const Button: FC<ButtonProps> = ({ children, className, appearance, size = "m", arrow = "none", ...props }) => {
+const Button: FC<ButtonProps> = ({
+  children,
+  className,
+  appearance = "primary",
+  size = "m",
+  arrow = "none",
+  ...props
+}) => {
   return (
     <button
       className={cx(cls.button, cls[`button--size-${size}`], cls[`button--appearance-${appearance}`], className)}
-      {...props}>
+      {...props}
+    >
       <span className={cls.button__inner}>
         <span>{children}</span>
         <Icon {...{ className: cx(cls[`button--arrow-${arrow}`]), name: "Arrow", width: 6, height: 10 }} />

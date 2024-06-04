@@ -1,7 +1,7 @@
 import { ComponentProps, ForwardedRef } from "react";
 
-export interface CardProps extends ComponentProps<"div"> {
-  color?: "white" | "primary";
-}
+export type CardProps = ComponentProps<"div"> & {
+  appearance?: "primary" | "white";
+};
 
 export type CardRefType = ForwardedRef<HTMLDivElement>;
