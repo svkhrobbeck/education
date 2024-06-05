@@ -13,6 +13,12 @@ export interface ICompany {
   height: number;
 }
 
+export interface ITimeLine {
+  iconName: IConsType;
+  title: string;
+  text: string;
+}
+
 // eslint-disable-next-line
 export declare namespace Menu {
   export interface Item {
