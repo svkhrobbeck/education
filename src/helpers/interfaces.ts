@@ -7,6 +7,12 @@ export type IChildren = Readonly<{ children: ReactNode }>;
 
 export type IConsType = keyof typeof Icons;
 
+export interface ICompany {
+  name: IConsType;
+  width: number;
+  height: number;
+}
+
 // eslint-disable-next-line
 export declare namespace Menu {
   export interface Item {

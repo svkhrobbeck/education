@@ -1,4 +1,4 @@
-import { FC, Fragment } from "react";
+import { FC } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -54,18 +54,18 @@ const Menu: FC = () => {
 
   const renderMenuItems = () => {
     return (
-      <>
+      <div className={cls.menu}>
         {Constants.levelMenu.map(item => (
-          <Fragment key={item.route}>
+          <div key={item.route}>
             <div className={cx(cls.menuItem, item.id === category && cls.levelActive)}>
               <Link className={cls.menuItemLink} href={`/${item.route}/${menu[0].pages[0]._id}`} />
               <Icon width={24} height={24} name={item.iconName} color="#787d85" />
               <span>{item.name}</span>
             </div>
             {item.id == category && renderAccordions(item)}
-          </Fragment>
+          </div>
         ))}
-      </>
+      </div>
     );
   };
 
@@ -117,7 +117,7 @@ const Menu: FC = () => {
     });
   };
 
-  return <div>{renderMenuItems()}</div>;
+  return renderMenuItems();
 };
 
 export default Menu;

@@ -4,8 +4,8 @@ import cx from "classnames";
 
 import { HeaderProps } from "./header.props";
 
-import { Container, IconButton } from "@/components";
-import { Sidebar, Logo } from "..";
+import { Container, IconButton, Logo } from "@/components";
+import { Sidebar } from "..";
 
 import cls from "./header.module.scss";
 
