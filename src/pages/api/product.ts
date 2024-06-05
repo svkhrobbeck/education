@@ -9,6 +9,11 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
       return res.status(200).json(product);
     }
+    if (req.method === "GET") {
+      if (!data.product.length) throw new Error("product not found");
+
+      return res.status(200).json(data.product);
+    }
   } catch (err) {
     const error = err as Error;
     return res.status(404).json({ message: error.message });
