@@ -1,7 +1,9 @@
 import cx from "classnames";
 
 import { LayoutProps } from "./layout.props";
-import { Footer, Header, ScrollUp, Sidebar } from "./components";
+
+import { ScrollUp } from "..";
+import { Footer, Header, Sidebar } from "./components";
 
 import cls from "./layout.module.scss";
 
