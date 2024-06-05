@@ -16,6 +16,7 @@ export { default as HhData } from "./hh-data";
 export { default as Divider } from "./divider";
 export { default as Product } from "./product";
 export { default as Heading } from "./heading";
+export { default as Landing } from "./landing";
 export { default as Products } from "./products";
 export { default as Textarea } from "./textarea";
 export { default as ScrollUp } from "./scroll-up";
