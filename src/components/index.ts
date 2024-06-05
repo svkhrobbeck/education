@@ -4,7 +4,7 @@ export { default as Card } from "./card";
 export { default as Icon } from "./icon";
 export { default as Sort } from "./sort";
 export { default as Logo } from "./logo";
-export { default as Home } from "./home";
+// export { default as Home } from "./home";
 export { default as Input } from "./input";
 export { default as Button } from "./button";
 export { default as Navbar } from "./navbar";
