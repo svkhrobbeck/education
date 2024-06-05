@@ -1,3 +1,6 @@
-import { IChildren } from "@/helpers/interfaces";
-
-export interface SeoProps extends IChildren {}
+export interface SeoProps {
+  title?: string;
+  desc?: string;
+  keyword?: string;
+  ogImg?: string;
+}
