@@ -2,7 +2,6 @@ import { GetServerSideProps, NextPage } from "next";
 import axios from "axios";
 
 import * as Types from "@/helpers/interfaces";
-
 import * as Layouts from "@/layouts";
 
 const HomePage: NextPage<HomeProps> = () => <></>;

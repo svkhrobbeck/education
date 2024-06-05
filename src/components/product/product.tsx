@@ -31,7 +31,7 @@ const Product = motion<Props.ProductProps>(
 
     return (
       <div className={cx(cls.wrapper, className)} ref={ref} {...props}>
-        <Card className={cls.product} color="white">
+        <Card className={cls.product} appearance="white">
           <div className={cls.title}>{product.title}</div>
           <div className={cls.price}>
             {Utils.convertToUSD(product.price)}
