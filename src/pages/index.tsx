@@ -7,10 +7,10 @@ import * as Layouts from "@/layouts";
 import { Landing, ScrollUp } from "@/components";
 
 const HomePage: NextPage<HomeProps> = () => (
-  <>
+  <Layouts.Seo>
     <Landing />
     <ScrollUp />
-  </>
+  </Layouts.Seo>
 );
 
 export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {

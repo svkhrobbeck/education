@@ -22,7 +22,7 @@ const SlugPage: NextPage<SlugPageProps> = ({ page, products }) => {
   }, [products]);
 
   return (
-    <>
+    <Layouts.Seo title={page.title} desc={page.description} keyword={page.tags.join(", ")}>
       <div className="slug-page-title-wrapper">
         <Heading tag="h1">{page.title}</Heading>
         <Sort sort={state.sort} setSort={setSort} />
@@ -32,7 +32,7 @@ const SlugPage: NextPage<SlugPageProps> = ({ page, products }) => {
       <HhData {...page} />
       <Advantages {...page} />
       <Skills {...page} />
-    </>
+    </Layouts.Seo>
   );
 };
 

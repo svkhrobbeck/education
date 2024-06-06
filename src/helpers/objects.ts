@@ -11,6 +11,6 @@ export const metaConfig = {
   baseURL: "https://nextech.soatov.uz/",
   logo: "/logo.svg",
   logoText: "Nextech",
-  favicon: "/logo.svg",
+  favicon: "/favicon.svg",
   copyright: "Nextech. Barcha huquqlar himoyalangan.",
 };
