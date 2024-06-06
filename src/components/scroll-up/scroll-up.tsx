@@ -16,7 +16,7 @@ const ScrollUp: FC = () => {
   return (
     <>
       {scrollY > 150 && (
-        <motion.button
+        <motion.div
           className={cls.scrollUp}
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1, transition: { duration: 0.6 } }}
@@ -28,7 +28,7 @@ const ScrollUp: FC = () => {
           onClick={scrollToTop}
         >
           <IconButton {...{ name: "Up", width: 21, height: 13, color: "#fff" }} />
-        </motion.button>
+        </motion.div>
       )}
     </>
   );
