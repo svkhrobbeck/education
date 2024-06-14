@@ -14,7 +14,7 @@ const Footer: FC<FooterProps> = ({ className, ...props }) => {
   return (
     <footer className={cx(cls.footer, className)} {...props}>
       <Container className={cls.footerContainer}>
-        <p className={cls.footerCopyright}>Nextech © {date}. All Rights Reserved</p>
+        <p className={cls.footerCopyright}>Education © {date}. All Rights Reserved</p>
         <Link className={cls.footerLink} href="/">
           Terms of use
         </Link>

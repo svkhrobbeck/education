@@ -11,7 +11,7 @@ const Hero: FC = () => {
     <div className={cls.hero}>
       <div className={cls.heroTitle}>
         <Heading tag="h1">
-          Lern New Skills Online With Nextech <span>Academy</span>
+          Lern New Skills Online With Education <span>Academy</span>
         </Heading>
         <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nulla adipisci temporibus ad, veniam blanditiis

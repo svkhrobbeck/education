@@ -1,8 +1,8 @@
-## Nextech Edu Platform
+## Education Platform
 
 #Demo
 
-https://nextech.soatov.uz
+https://education.soatov.uz
 
 [storybook](https://666181b1e332c6280f648a1c-vyajcuamwx.chromatic.com/)
 

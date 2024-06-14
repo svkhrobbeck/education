@@ -8,7 +8,7 @@ import * as Layouts from "@/layouts";
 
 const IndexPage: NextPage<IndexPageProps> = props => {
   return (
-    <Layouts.Seo title="Nextech | Kurslar">
+    <Layouts.Seo title="Education | Kurslar">
       {props.products.map(product => (
         <div key={uuidv4()}>{product.title}</div>
       ))}
