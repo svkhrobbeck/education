@@ -11,14 +11,14 @@ const Hero: FC = () => {
     <div className={cls.hero}>
       <div className={cls.heroTitle}>
         <Heading tag="h1">
-          Lern New Skills Online With Education <span>Academy</span>
+          Yangi Ko&apos;nikmalarni <span>Education</span>da Onlayn O&apos;rganing
         </Heading>
         <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nulla adipisci temporibus ad, veniam blanditiis
           optio voluptatibus eius id, eaque, ex aperiam quam voluptatum deleniti quos? Quis voluptatum rem quaerat.
         </Text>
         <Button appearance="success" arrow="right">
-          Join For Free
+          Bepul qo&apos;shilish
         </Button>
       </div>
       <div className={cls.heroImage}>

@@ -9,7 +9,7 @@ const Advantages: FC<AdvantagesProps> = props => {
   return (
     <section className={cls.advantages}>
       <Heading className={cls.heading} tag="h2">
-        Advantages
+        Afzalliklari
       </Heading>
 
       {!!props.advantages.length &&

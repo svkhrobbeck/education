@@ -8,7 +8,7 @@ import cls from "./skills.module.scss";
 const Skills: FC<Types.Page.Model> = props => {
   return (
     <section className={cls.skills}>
-      <Heading tag="h2">Skills</Heading>
+      <Heading tag="h2">Ko&apos;nikmalar</Heading>
 
       <div className={cls.skillsInner}>
         {!!props.tags.length &&

@@ -2,13 +2,13 @@ import * as Enums from "./enums";
 import * as Types from "./interfaces";
 
 export const navLinks = [
-  { name: "Home", route: "/" },
-  { name: "Courses", route: "/courses/reactjs_id" },
+  { name: "Bosh sahifa", route: "/" },
+  { name: "Kurslar", route: "/courses/reactjs_id" },
 ];
 
 export const levelMenu: Types.Menu.Level[] = [
-  { route: "books", name: "Books", iconName: "Books", id: Enums.Categories.Books },
-  { route: "courses", name: "Courses", iconName: "Courses", id: Enums.Categories.Courses },
+  { route: "courses", name: "Kurslar", iconName: "Courses", id: Enums.Categories.Courses },
+  { route: "books", name: "Kitoblar", iconName: "Books", id: Enums.Categories.Books },
 ];
 
 export const company: Types.ICompany[] = [

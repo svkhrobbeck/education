@@ -42,7 +42,7 @@ const Product = motion<Props.ProductProps>(
             )}
           </div>
           <div className={cls.credit}>
-            {Utils.convertToUSD(product.credit)}/<span className={cls.month}>month</span>
+            {Utils.convertToUSD(product.credit)}/<span className={cls.month}>oyiga</span>
           </div>
           <div className={cls.rating}>
             <Rating rating={product.initialRating} />
@@ -55,8 +55,8 @@ const Product = motion<Props.ProductProps>(
                 </Tag>
               ))}
           </div>
-          <div className={cls.priceTitle}>Price</div>
-          <div className={cls.creditTitle}>Credit</div>
+          <div className={cls.priceTitle}>Narxi</div>
+          <div className={cls.creditTitle}>Bo&apos;lib to&apos;lash</div>
           <div className={cls.ratingTitle}>
             <span className={cls.reviewScoller} onClick={scrollToReview}>
               {product.reviewCount} {Utils.dedectedReview(product.reviewCount)}
@@ -81,13 +81,13 @@ const Product = motion<Props.ProductProps>(
           <div className={cls.advBlock}>
             {product?.advantages && (
               <div className={cls.advantages}>
-                <div className={cls.advantageTitle}>Advantages</div>
+                <div className={cls.advantageTitle}>Afzalliklari</div>
                 <div>{product.advantages}</div>
               </div>
             )}
             {product?.disadvantages && (
               <div className={cls.disadvantages}>
-                <div className={cls.disadvantageTitle}>Disadvantages</div>
+                <div className={cls.disadvantageTitle}>Kamchiliklari</div>
                 <div>{product.disadvantages}</div>
               </div>
             )}
@@ -96,14 +96,14 @@ const Product = motion<Props.ProductProps>(
           <Divider className={cls.hr2} />
 
           <div className={cls.actions}>
-            <Button appearance="primary">More Details</Button>
+            <Button appearance="primary">Ko&apos;proq ma&apos;lumot</Button>
             <Button
               appearance="ghost"
               arrow={reviewOpen ? "down" : "right"}
               className={cls.reviewBtn}
               onClick={() => setReviewOpen(prev => !prev)}
             >
-              Review
+              Fikr bildirish
             </Button>
           </div>
         </Card>

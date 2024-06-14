@@ -11,7 +11,7 @@ const HhData: FC<HhDataProps> = props => {
   return (
     <section className={cls.hh}>
       <div className={cls.header}>
-        <Heading tag="h2">Vacations - {props.category}</Heading>
+        <Heading tag="h2">Vakansiyalar - {props.category}</Heading>
         <Tag color="red" size="m">
           hh.uz
         </Tag>
@@ -19,7 +19,7 @@ const HhData: FC<HhDataProps> = props => {
 
       <div className={cls.hhInner}>
         <Card className={cls.count}>
-          <div className={cls.title}>All Vacations</div>
+          <div className={cls.title}>Barcha Vakansiyalar</div>
           <div className={cls.countValue}>{props?.hh?.count}</div>
         </Card>
 

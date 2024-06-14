@@ -6,5 +6,5 @@ export const convertToUSD = (price: number): string => {
 };
 
 export const dedectedReview = (number: number): string => {
-  return number > 1 ? "Reviews" : "Review";
+  return number > 1 ? "Ta Fikrlar" : "Ta Fikr";
 };

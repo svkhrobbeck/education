@@ -1,6 +1,6 @@
 export enum Categories {
-  Books,
   Courses,
+  Books,
 }
 
 export enum Sorts {

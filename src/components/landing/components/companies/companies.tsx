@@ -9,7 +9,7 @@ import cls from "../../landing.module.scss";
 const Companies: FC = () => {
   return (
     <section className={cls.companies}>
-      <Heading tag="h3">Trusted by the world&apos;s best</Heading>
+      <Heading tag="h3">Dunyoning eng ishonchlilari ko&apos;magi ostida</Heading>
       <div className={cls.icons}>
         {Constants.company.map((icon, idx) => (
           <Icon className={cls.icon} {...icon} key={idx} />

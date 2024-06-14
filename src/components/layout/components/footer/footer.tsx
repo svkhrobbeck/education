@@ -14,12 +14,12 @@ const Footer: FC<FooterProps> = ({ className, ...props }) => {
   return (
     <footer className={cx(cls.footer, className)} {...props}>
       <Container className={cls.footerContainer}>
-        <p className={cls.footerCopyright}>Education © {date}. All Rights Reserved</p>
+        <p className={cls.footerCopyright}>Education © {date}. Barcha Huquqlar Himoyalangan</p>
         <Link className={cls.footerLink} href="/">
-          Terms of use
+          Foydalanish shartlari
         </Link>
         <Link className={cls.footerLink} href="/">
-          Privacy Policy
+          Maxfiylik siyosati
         </Link>
       </Container>
     </footer>

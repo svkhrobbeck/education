@@ -11,7 +11,7 @@ const TimeLine = () => {
     <section className={cls.timeline}>
       <Container type="mini">
         <Heading className={cls.timelineTitle} tag="h3">
-          What we can teach you
+          Biz sizga o&apos;rgata olamiz
         </Heading>
         <div className={cls.timelineCard}>
           <Timeline lineColor="#ddddd">
