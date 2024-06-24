@@ -16,6 +16,8 @@ const inter = Inter({
   display: "swap",
 });
 
+NProgress.configure({ showSpinner: false });
+
 const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     const handleRouteStart = () => NProgress.start();
