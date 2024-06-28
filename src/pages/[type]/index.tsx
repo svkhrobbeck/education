@@ -17,7 +17,7 @@ const IndexPage: NextPage<IndexPageProps> = props => {
 };
 
 export const getServerSideProps: GetServerSideProps<IndexPageProps> = async ({ query }) => {
-  const base_url = process.env.NEXT_PUBLIC_DOMAIN!;
+  const base_url = process.env.NEXT_PUBLIC_DOMAIN;
   const category = Constants.levelMenu.find(m => m.route === query.type)?.id as number;
 
   try {

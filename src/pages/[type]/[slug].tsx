@@ -38,7 +38,7 @@ const SlugPage: NextPage<SlugPageProps> = ({ page, products }) => {
 
 export const getServerSideProps: GetServerSideProps<SlugPageProps> = async ({ query }) => {
   const { type, slug } = query;
-  const url = process.env.NEXT_PUBLIC_DOMAIN!;
+  const url = process.env.NEXT_PUBLIC_DOMAIN;
   const category = Constants.levelMenu.find(c => c.route === type)?.id as number;
 
   try {
