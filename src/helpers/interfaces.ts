@@ -1,11 +1,16 @@
-import { ReactNode } from "react";
-
 import { Icons } from "@/assets";
 import { Categories } from "./enums";
 
-export type IChildren = Readonly<{ children: ReactNode }>;
-
 export type IConsType = keyof typeof Icons;
+
+// eslint-disable-next-line
+declare namespace NodeJS {
+  // eslint-disable-next-line
+  interface ProcessEnv {
+    readonly NEXT_PUBLIC_API_BASE_URL: string;
+    readonly NEXT_PUBLIC_DOMAIN: string;
+  }
+}
 
 export interface ICompany {
   name: IConsType;
@@ -19,7 +24,6 @@ export interface ITimeLine {
   text: string;
 }
 
-// eslint-disable-next-line
 export declare namespace Menu {
   export interface Item {
     _id: { secondCategory: string };
@@ -42,7 +46,6 @@ export declare namespace Menu {
   }
 }
 
-// eslint-disable-next-line
 export declare namespace Page {
   export interface HhData {
     count: number;
@@ -69,7 +72,6 @@ export declare namespace Page {
   }
 }
 
-// eslint-disable-next-line
 export declare namespace Product {
   export interface Model {
     alias: string;

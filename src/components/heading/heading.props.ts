@@ -1,6 +1,5 @@
-import { DetailedHTMLProps, HTMLAttributes } from "react";
-import { IChildren } from "@/helpers/interfaces";
+import { DetailedHTMLProps, HTMLAttributes, PropsWithChildren } from "react";
 
 type HTagProps = DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>;
 
-export type HeadingProps = IChildren & HTagProps & { tag: "h1" | "h2" | "h3" };
+export type HeadingProps = PropsWithChildren<HTagProps & { tag: "h1" | "h2" | "h3" }>;

@@ -1,4 +1,3 @@
-import { IChildren } from "@/helpers/interfaces";
-import { ComponentProps } from "react";
+import { ComponentProps, PropsWithChildren } from "react";
 
-export type LayoutProps = IChildren & ComponentProps<"div">;
+export type LayoutProps = PropsWithChildren<ComponentProps<"div">>;
